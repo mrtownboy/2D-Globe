@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #000011;
+  }
+  
+  header,
+  footer {
+    position: absolute;
+    color: #8990b0;
+    z-index: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  header {
+    pointer-events: none;
+    top: 0;
+  }
+  
+  footer {
+    bottom: 0;
+  }
+  
+  h1 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .controls {
+    display: flex;
+  }
+  
+  .controls h2 {
+    font-size: 1em;
+    margin: 0px 0px 10px 0px;
+  }
+  
+  .control-group {
+    margin-right: 15px;
+  }
+  
+  .control-group:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .control {
+    font-size: 0.8em;
+  }
+  
+  .control input {
+    margin: 0px;
+  }
+  
+  .description {
+    margin: 0;
+    opacity: 0.75;
+    font-size: 0.8em;
+  }
+  
+  .scene-tooltip {
+    text-align: center;
+    z-index: 0;
+  }
+  
+  .gui {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .legend {
+    pointer-events: none;
+    flex-direction: column;
+    display: flex;
+    width: 100px;
+  }
+  
+  .legend-scale-container {
+    display: flex;
+    height: 170px;
+    justify-content: flex-end;
+  }
+  
+  .legend-heading {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .legend-gradient {
+    width: 20px;
+    height: 151px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 9px;
+  }
+  
+  .legend-scale {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 170px;
+    box-sizing: border-box;
+  }
+  
+  .legend-tick {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 0.75em;
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .legend-tick::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 5px;
+    height: 1px;
+    background-color: #8990b0;
+  }

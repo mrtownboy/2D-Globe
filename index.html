@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Air Traffic Globe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="http://unpkg.com/d3-dsv"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale@3"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>Air Traffic Globe</h1>
+        <p id="description" class="description"></p>
+      </div>
+      <div id="legend" class="legend"></div>
+    </header>
+    <main>
+      <div class="gui" id="gui"></div>
+      <div class="globe" id="globe"></div>
+    </main>
+  </body>
+</html>
