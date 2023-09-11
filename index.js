@@ -590,7 +590,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Load flights
   async function loadFlights() {
     return await fetch(
-      "https://raw.githubusercontent.com/mrtownboy/data/main/India%20Dhairya.csv"
+      "https://raw.githubusercontent.com/mrtownboy/2D-Globe/main/IndiaFlightsDataSet"
     )
       .then((res) => res.text())
       .then((d) => {
